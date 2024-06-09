@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CAFEXPREES</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>CAFEXPREES</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos" class="nav-link">CAFÉS & PARCEIROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="btn-chechar-emails" class="nav-link"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="home">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Img/slide1.jpg" class="d-block w-100" alt="Xicara de café de quente">
+                        <div class="carousel-caption">
+                            <h5>DESFRUTE DO MELHOR CAFÉ</h5>
+                            <a href="#produtos" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Img/slide2.jpg" class="d-block w-100" alt="Grão de café de diversos paises">
+                        <div class="carousel-caption">
+                            <h5>GRÃOS SELECIONADOS</h5>
+                            <p>Grãos com diferentes sabores vindo de diversas regiões do mundo</p>
+                            <a href="#produtos" class="btn btn-primary">Veja Nossos Produtos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Img/slide3.jpg" class="d-block w-100"
+                            alt="Três pessoas segurando três copos com café">
+                        <div class="carousel-caption">
+                            <h5>COMPARTILHE MOMENTOS</h5>
+                            <p>Deixe aqui sua opinião sobre nossos produtos</p>
+                            <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <h2><i class="fa-solid fa-mug-saucer"></i> CAFÉS & PARCEIROS</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"type="button">Cafés</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Empresas parceiras</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉCONILON.jpg" class="card-img-top" alt="Café Conilon">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CONILON</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉARABICACRU.jpg" class="card-img-top" alt="Café Arabica Cru">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ARABICA CRU</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉZIM.jpg" class="card-img-top" alt="Café Robusta">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ROBUSTA</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉCONILON.jpg" class="card-img-top" alt="Café Conilon">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CONILON</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉARABICACRU.jpg" class="card-img-top" alt="Café Arabica Cru">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ARABICA CRU</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./Img/CAFÉZIM.jpg" class="card-img-top" alt="Café Robusta">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ROBUSTA</h5>
+                                        <h6 class="card-subtitle">149,99 $</h6>
+                                        <del>299,99 $</del>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="tab-pane active" id="aba1">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/BAGGIO.jpg" class="card-img-top" alt="Empresa Baggio">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/CAFEPELE.png" class="card-img-top" alt="Empresa Café Pele">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/trescora.png" class="card-img-top" alt="Empresa Melita">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/BAGGIO.jpg" class="card-img-top" alt="Café Conilon">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/CAFEPELE.png" class="card-img-top" alt="Café Arabica Cru">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Img/trescora.png" class="card-img-top" alt="Café Robusta">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+        <section id="sobre">
+            <div class="container">
+                <h2><i class="fa-solid fa-landmark"></i> SOBRE A EMPRESA</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text center mb-3 mb-md-0">
+                        <img class="empresa img-fluid" src="./Img/empresa.jpg" alt="Fachada da empresa CAFEXPREES" style="width: 300px; height: auto;">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>CAFEXPREES</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam doloribus perferendis distinctio eaque nisi voluptas dolores nam minus, excepturi neque velit nemo sequi? Hic temporibus voluptates libero quaerat neque.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum minima voluptatem quaerat, vero tempora et nisi voluptate eum corrupti facilis esse magni laboriosam quas unde totam sapiente aut fugit consequuntur!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident sit ex minus. Sequi, laboriosam esse at eos, repudiandae dolores necessitatibus minima reprehenderit sapiente libero animi quas? Quidem dolorum dignissimos labore?
+                        </p>
+                        <div class="botao">
+                            <button type="button" class="btn btn-primary insta"><i class="fa-brands fa-instagram"></i></button>
+                            <button type="button" class="btn btn-primary face"><i class="fa-brands fa-facebook"></i></button>
+                            <button type="button" class="btn btn-primary what"><i class="fa-brands fa-whatsapp"></i></button>
+                            <button type="button" class="btn btn-primary lin"><i class="fa-brands fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2><i class="fa-solid fa-envelope"></i> CONTATO</h2>
+            <div class="container">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 CAFEXPREES. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>IMPORTANTE</strong>
+            </header>
+            <div class="toast-body">
+                Deseja adicionar um novo item ao carrinho?
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-success">
+                        SIM
+                    </button>
+                    <button data-bs-dismiss="toast" class="btn btn-danger">
+                        NÃO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ativadorToast = document.getElementById('btn-chechar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function () {
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./Lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
